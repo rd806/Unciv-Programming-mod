@@ -1,0 +1,433 @@
+
+game.png
+size: 1024, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+BuildingIcons/ASCII
+  rotate: false
+  xy: 4, 709
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Bitwise-operation
+  rotate: false
+  xy: 323, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Blog
+  rotate: false
+  xy: 4, 437
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Browser
+  rotate: false
+  xy: 459, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Destructor
+  rotate: false
+  xy: 140, 437
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Firewall
+  rotate: false
+  xy: 140, 165
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Instruction-set
+  rotate: false
+  xy: 276, 620
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Linked-list
+  rotate: false
+  xy: 412, 620
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Linux
+  rotate: false
+  xy: 548, 756
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Luogu
+  rotate: false
+  xy: 4, 845
+  size: 175, 175
+  orig: 175, 175
+  offset: 0, 0
+  index: -1
+BuildingIcons/Matrix
+  rotate: false
+  xy: 276, 348
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Notebook
+  rotate: false
+  xy: 412, 484
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/OJ
+  rotate: false
+  xy: 684, 756
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/PC
+  rotate: false
+  xy: 412, 348
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Production-line
+  rotate: false
+  xy: 820, 756
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Register
+  rotate: false
+  xy: 820, 620
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Search
+  rotate: false
+  xy: 548, 212
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/Sequence-table
+  rotate: false
+  xy: 684, 348
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/System
+  rotate: false
+  xy: 684, 212
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+BuildingIcons/VScode
+  rotate: false
+  xy: 820, 348
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Account
+  rotate: false
+  xy: 187, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ImprovementIcons/HDD-box
+  rotate: false
+  xy: 276, 756
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Program
+  rotate: false
+  xy: 276, 76
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Project
+  rotate: false
+  xy: 412, 212
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/C#
+  rotate: false
+  xy: 4, 301
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/C++
+  rotate: false
+  xy: 595, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Java
+  rotate: false
+  xy: 276, 484
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NationIcons/Python
+  rotate: false
+  xy: 548, 348
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+PolicyIcons/Enumeration
+  rotate: false
+  xy: 140, 301
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+PolicyIcons/Greedy
+  rotate: false
+  xy: 140, 301
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+PolicyIcons/Simulation
+  rotate: false
+  xy: 140, 301
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+PolicyIcons/Sort
+  rotate: false
+  xy: 140, 301
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/Cloud-storage-VIP
+  rotate: false
+  xy: 4, 29
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/DDR4
+  rotate: false
+  xy: 140, 709
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/DDR5
+  rotate: false
+  xy: 140, 573
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/Office
+  rotate: false
+  xy: 276, 212
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/Photoshop
+  rotate: false
+  xy: 684, 620
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ResourceIcons/SanDisk
+  rotate: false
+  xy: 412, 76
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/404NotFound
+  rotate: false
+  xy: 956, 828
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Ancient ruins
+  rotate: false
+  xy: 956, 764
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Cache
+  rotate: false
+  xy: 956, 700
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City center
+  rotate: false
+  xy: 956, 619
+  size: 64, 73
+  orig: 64, 73
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/City ruins
+  rotate: false
+  xy: 956, 547
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Cloud-storage
+  rotate: false
+  xy: 956, 475
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Hard-drive
+  rotate: false
+  xy: 956, 411
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Mobile-storage
+  rotate: false
+  xy: 956, 339
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/RAM
+  rotate: false
+  xy: 820, 284
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/System occupancy
+  rotate: false
+  xy: 276, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Worn-Hard-drive
+  rotate: false
+  xy: 820, 220
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+UnitIcons/Array-variables
+  rotate: false
+  xy: 4, 573
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/CPU
+  rotate: false
+  xy: 4, 165
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Character-variables
+  rotate: false
+  xy: 731, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Compiler
+  rotate: false
+  xy: 867, 892
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Function-variables
+  rotate: false
+  xy: 140, 29
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/JVM
+  rotate: false
+  xy: 412, 756
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Numerical-variables
+  rotate: false
+  xy: 548, 620
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Pentium-processor
+  rotate: false
+  xy: 548, 484
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Recursion
+  rotate: false
+  xy: 684, 484
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/String-variables
+  rotate: false
+  xy: 820, 484
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Subscriber
+  rotate: false
+  xy: 548, 76
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitIcons/Vector
+  rotate: false
+  xy: 684, 76
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

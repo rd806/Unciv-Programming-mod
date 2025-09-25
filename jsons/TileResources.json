@@ -1,0 +1,63 @@
+[
+	{
+		"name": "DDR5",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["RAM"],
+		"production": 2, 
+		"improvement": "Program",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [60] tiles <in [{Featureless} {RAM}] tiles>"
+		]
+	},
+	{
+		"name": "DDR4",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["RAM"],
+		"production": 1, 
+		"improvement": "Program",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Generated on every [18] tiles <in [{Featureless} {RAM}] tiles>"
+		]
+	},
+	{
+		"name": "SanDisk",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Hard-drive"],
+		"food": 1, 
+		"improvement": "HDD-box",
+		"improvementStats": {"food": 1},
+		"uniques": [
+			"Generated on every [18] tiles <in [{Featureless} {RAM}] tiles>"
+		]
+	},
+
+	{
+		"name": "Cloud-storage-VIP",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Cloud-storage"],
+		"gold": 2, 
+		"improvement": "Account",
+		"improvementStats": {"gold": 1},
+		"uniques": []
+	},
+	{
+		"name": "Office",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hard-drive", "Worn-Hard-drive"],
+		"gold": 2,
+		"improvement": "Project",
+		"improvementStats": {"gold": 1},
+		"uniques": []
+	},
+	{
+		"name": "Photoshop",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hard-drive"],
+		"gold": 2,
+		"improvement": "Project",
+		"improvementStats": {"gold": 1},
+		"uniques": []
+	}
+]

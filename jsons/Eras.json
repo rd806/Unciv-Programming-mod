@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Stage I",
+        "researchAgreementCost": 150,
+        "startingSettlerCount": 1,
+        "startingGold": 100,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 1,
+        "startingMilitaryUnit": "Numerical-variables",
+        "settlerPopulation": 1,
+        "settlerBuildings": [],
+        "baseUnitBuyCost": 200,
+        "embarkDefense": 20,
+        "startPercent": 0,
+        "citySound": "cityRenaissance",
+        "iconRGB": [255, 87, 35],
+        "uniques": []
+    },
+    {
+        "name": "Stage II",
+        "researchAgreementCost": 150,
+        "startingSettlerCount": 1,
+        "startingGold": 100,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Numerical-variables",
+        "settlerPopulation": 1,
+        "settlerBuildings": [],
+        "baseUnitBuyCost": 200,
+        "embarkDefense": 20,
+        "startPercent": 0,
+        "citySound": "cityRenaissance",
+        "iconRGB": [255, 87, 35],
+        "uniques": []
+    },
+    {
+        "name": "Stage III",
+        "researchAgreementCost": 150,
+        "startingSettlerCount": 1,
+        "startingGold": 100,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Numerical-variables",
+        "settlerPopulation": 1,
+        "settlerBuildings": [],
+        "baseUnitBuyCost": 200,
+        "embarkDefense": 20,
+        "startPercent": 0,
+        "citySound": "cityRenaissance",
+        "iconRGB": [255, 87, 35],
+        "uniques": []
+    }
+]

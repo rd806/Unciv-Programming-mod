@@ -1,0 +1,23 @@
+[
+	{
+		"name": "Memory access I",
+		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
+		"unitTypes": ["Number", "Character", "Function"],
+		"column": 1,
+		"row": 1
+	},
+	{
+		"name": "Memory access II",
+		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
+		"unitTypes": ["Number", "Character", "Function"], 
+		"column": 1,
+		"row": 2         
+	},
+	{
+		"name": "Memory access III",
+		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
+		"unitTypes": ["Number", "Character", "Function"],
+		"column": 1,
+		"row": 3          
+	}
+]

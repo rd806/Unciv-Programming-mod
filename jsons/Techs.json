@@ -1,0 +1,214 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Stage I",
+		"techCost": 20,
+		"buildingCost": 40,
+		"techs": [
+			{
+				"name": "Hello World",
+				"row": 5,
+				"quote": "WIP",
+				"uniques": ["Starting tech"]
+			}
+		]	
+	},
+
+	{
+		"columnNumber": 1,
+		"era": "Stage I",
+		"techCost": 35,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Internet",
+				"row": 1,
+				"prerequisites": ["Hello World"],
+				"quote": "The Internet, also known as the Net, is a global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to communicate between networks and devices.",
+				"uniques": []
+			},
+			{
+				"name": "Sequential Structure",
+				"row": 3,
+				"prerequisites": ["Hello World"],
+				"quote": "Sequential structure is the simplest and most commonly used program structure, as long as the corresponding statements are written in the order of solving the problem. Its execution order is top-down and sequential.",
+				"uniques": []
+			}, {
+				"name": "Selection Structure",
+				"row": 4,
+				"prerequisites": ["Hello World"],
+				"quote": "The core of selection structure is to form conditional judgments through relational expressions and logical expressions, and the result is determined by Boolean values to determine the branch path.",
+				"uniques": []
+			}, {
+				"name": "Iteration Structure",
+				"row": 5,
+				"prerequisites": ["Hello World"],
+				"quote": "Iteration structure refers to a program structure that needs to be repeatedly executed to determine whether to continue or exit the loop based on the conditions in the loop body.",
+				"uniques": []
+			}, {
+				"name": "Binary System",
+				"row": 8,
+				"prerequisites": ["Hello World"],
+				"quote": "A method of counting and carrying. There are only two digits, 0 and 1, and one digit is carried for every 2. It is mostly used in electronic computers.",
+				"uniques": []
+			}
+		]
+	},
+
+	{
+		"columnNumber": 2,
+		"era": "Stage I",
+		"techCost": 50,
+		"buildingCost": 80,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Website",
+				"row": 1,
+				"prerequisites": ["Internet"],
+				"quote": "A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.",
+				"uniques": ["Enables embarkation for land units"]
+			},
+			{
+				"name": "Array",
+				"row": 2,
+				"prerequisites": ["Sequential Structure", "Selection Structure", "Iteration Structure"],
+				"quote": "An array is a data structure that contains a group of elements. Typically, these elements are all of the same data type, such as an integer or string",
+				"uniques": []
+			}, {
+				"name": "Function",
+				"row": 4,
+				"prerequisites": ["Sequential Structure", "Selection Structure", "Iteration Structure"],
+				"quote": "A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.",
+				"uniques": []
+			}, {
+				"name": "Code",
+				"row": 6,
+				"prerequisites": ["Binary System"],
+				"quote": "Code is a set of instructions written in a programming language that a computer can understand and execute.",
+				"uniques": []
+			}, {
+				"name": "Von Neumann System",
+				"row": 8,
+				"prerequisites": ["Binary System"],
+				"quote": "Von Neumann system: The number system of digital computers adopts binary and computers should execute programs in sequence.",
+				"uniques": []
+			}, {
+				"name": "Linear Algebra",
+				"row": 9,
+				"prerequisites": ["Binary System"],
+				"quote": "Linear algebra is the branch of mathematics concerning linear equations, linear functions, and their representations through matrices and vector spaces.",
+				"uniques": []
+			}
+		]
+	},
+
+	{
+		"columnNumber": 3,
+		"era": "Stage II",
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Network Protocol",
+				"row": 1,
+				"prerequisites": ["Website"],
+				"quote": "A network protocol is a set of rules and conventions for communication between network devices. It defines how data is formatted, transmitted, and received over a network.",
+				"uniques": []
+			},
+			{
+				"name": "Pointer",
+				"row": 2,
+				"prerequisites": ["Array"],
+				"quote": "A pointer is a variable that stores the memory address of another variable. Pointers are used to manipulate data in memory directly.",
+				"uniques": []
+			}, {
+				"name": "Character String",
+				"row": 4,
+				"prerequisites": ["Array", "Function", "Code"],
+				"quote": "A string is a sequence of characters, either as a literal constant or as some kind of variable. The latter may allow its elements to be mutated and the length changed, or it may be fixed (after creation).",
+				"uniques": []
+			}, {
+				"name": "Assembly Language",
+				"row": 6,
+				"prerequisites": ["Code", "Von Neumann System"],
+				"quote": "Assembly language is a low-level programming language that uses symbolic code and is specific to a computer architecture. It is converted into machine language using an assembler.",
+				"uniques": []
+			}, {
+				"name": "Processor Architecture",
+				"row": 8,
+				"prerequisites": ["Von Neumann System"],
+				"quote": "Processor architecture refers to the design and organization of a computer's central processing unit (CPU), including its instruction set, data paths, and control unit.",
+				"uniques": []
+			}
+		]
+	},
+
+	{
+		"columnNumber": 4,
+		"era": "Stage II",
+		"techCost": 175,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Class and Object",
+				"row": 2,
+				"prerequisites": ["Pointer"],
+				"quote": "A class is a blueprint for creating objects, providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).",
+				"uniques": []
+			}, {
+				"name": "Stack and Queue",
+				"row": 4,
+				"prerequisites": ["Character String", "Pointer"],
+				"quote": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle, while a queue follows the First In First Out (FIFO) principle.",
+				"uniques": []
+			}, {
+				"name": "Operating System",
+				"row": 6,
+				"prerequisites": ["Assembly Language", "Processor Architecture"],
+				"quote": "An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.",
+				"uniques": []
+			}, {
+				"name": "Moore's Law",
+				"row": 9,
+				"prerequisites": ["Processor Architecture"],
+				"quote": "Moore's Law is the observation that the number of transistors in a dense integrated circuit doubles about every two years.",
+				"uniques": []
+			}
+		]
+	},
+
+	{
+		"columnNumber": 5,
+		"era": "Stage II",
+		"techCost": 275,
+		"buildingCost": 120,
+		"wonderCost": 300,
+		"techs": [
+			{
+				"name": "Memory Release",
+				"row": 3,
+				"prerequisites": ["Class and Object", "Stack and Queue", "Operating System"],
+				"quote": "Memory release refers to the technical means of releasing data residing in memory to improve the utilization and performance of system memory resources.",
+				"uniques": []
+			},
+			{
+				"name": "Basic Algorithm",
+				"row": 4,
+				"prerequisites": ["Stack and Queue"],
+				"quote": "The algorithm describes a process in which a computation can start from an initial state and initial input, go through a series of finite and clearly defined states, and ultimately produce an output that stops at a final state.",
+				"uniques": []
+			},
+			{
+				"name": "Memory Architecture",
+				"row": 7,
+				"prerequisites": ["Operating System", "Moore's Law"],
+				"quote": "The memory architecture covers the connection mode between storage devices and computer systems, and has developed through bus storage, storage networks, and virtual storage stages.",
+				"uniques": ["Roads connect tiles across rivers", "Improves movement speed on roads"]
+			}
+		]
+	}
+]

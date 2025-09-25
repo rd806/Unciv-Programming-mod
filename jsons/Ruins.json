@@ -1,0 +1,14 @@
+[
+    {
+        "name": "squatters willing to work for you",
+        "notification": "A [Worker] has joined us!",
+        "uniques": ["Free [Worker] found in the ruins"],
+        "excludedDifficulties": ["Programmer", "Master", "Expert", "Developer"]
+    },
+    {
+        "name": "squatters wishing to settle under your rule",
+        "notification": "A [Compiler] has joined us!",
+        "uniques": ["Free [Compiler] found in the ruins"],
+        "excludedDifficulties": ["Programmer", "Master", "Expert", "Developer"]
+    }
+]

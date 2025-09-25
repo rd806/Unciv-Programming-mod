@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Programming",
+        "movementType": "Land"
+    },
+    {
+        "name": "Programming-online",
+        "movementType": "Water"
+    },
+
+    {
+        "name": "Number",
+        "movementType": "Land"
+    },
+    {
+        "name": "Character",
+        "movementType": "Land"
+    },
+    {
+        "name": "Function",
+        "movementType": "Land"
+    }, 
+    {
+        "name": "Hardware",
+        "movementType": "Land"
+    }
+]

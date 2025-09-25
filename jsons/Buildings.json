@@ -1,0 +1,154 @@
+[
+    {
+		"name": "PC",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2.5,
+		"cost": 0,
+		"uniques": ["Indicates the capital city"]
+	},
+
+	{
+		"name": "Browser",
+		"science": 1,
+		"production": 1,
+		"maintenance": 1,
+		"requiredTech": "Internet",
+		"uniques": ["Must be next to [Cloud-storage]"]
+	},
+    {
+		"name": "Notebook",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Production] per [2] population [in this city]"],
+		"requiredTech": "Sequential Structure"
+	},
+    {
+		"name": "OJ",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Iteration Structure"
+	},
+    {
+		"name": "Luogu",
+		"science": 3,
+		"culture": 1,
+		"isWonder": true,
+		"requiredTech": "Iteration Structure",
+		"uniques": ["Free Technology", "Gain a free [OJ] [in this city]"],
+		"quote": "Luogu was founded in 2013 and is committed to providing a refreshing and fast programming experience for participants in NOIP, NOI, and ACM. It has an online testing system, a powerful community, and online learning functions. Many tutorial contents are provided by OIERS, with a wide range of content."
+	}, 
+	{
+		"name": "Bitwise-operation",
+		"production": 2,
+		"requiredTech": "Binary System",
+		"uniques": ["[+15]% Production when constructing [Number] units [in this city]"]
+	},
+
+	{
+		"name": "Blog",
+		"science": 1,
+		"happiness": 2,
+		"requiredTech": "Website",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Sequence-table",
+		"maintenance": 1,
+		"requiredTech": "Array",
+		"uniques": ["[+20]% [Food] [in this city]"]
+	},
+	{
+		"name": "VScode",
+		"production": 3,
+		"isNationalWonder": true,
+		"requiredTech": "Array",
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Only available <if [Notebook] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
+		"quote": "Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring."
+	},
+	
+    {
+        "name": "ASCII",
+        "production": 2,
+        "requiredTech": "Code",
+        "uniques": ["[+15]% Production when constructing [Character] units [in this city]"]
+    },
+	{
+		"name": "Matrix",
+		"maintenance": 1,
+		"requiredTech": "Linear Algebra",
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"]
+	}
+
+	{
+		"name": "Firewall",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"requiredTech": "Network Protocol",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Linked-list",
+		"food": 1,
+		"requiredTech": "Pointer",
+		"uniques": ["[+1 Production] from [DDR5] tiles [in this city]"]
+	},
+	{
+		"name": "Register",
+		"food": 2,
+		"maintenance": 1,
+		"requiredTech": "Assembly Language"
+	},
+	{
+		"name": "Instruction-set",
+		"production": 1,
+		"science": 1,
+		"requiredTech": "Assembly Language"
+	},
+	{
+		"name": "Production-line",
+		"food": 1,
+		"production": 1,
+		"maintenance": 1,
+		"requiredTech": "Processor Architecture"
+	},
+
+
+	{
+		"name": "System",
+		"production": 2,
+		"science": 1,
+		"maintenance": 1,
+		"requiredBuilding": "Instruction-set",
+		"requiredTech": "Operating System"
+	},
+	{
+		"name": "Linux",
+		"production": 6,
+		"science": 2,
+		"isWonder": true,
+		"requiredBuilding": "Instruction-set",
+		"requiredTech": "Operating System",
+		"uniques": ["Gain a free [System] [in this city]"],
+		"quote": "Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution."
+	},
+
+	{
+		"name": "Destructor",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"requiredTech": "Memory Release",
+		"uniques": ["[40]% Food is carried over after population increases [in this city]"]
+	},
+	{
+		"name": "Search",
+		"production": 1,
+		"maintenance": 1,
+		"requiredTech": "Basic Algorithm"
+	}
+]

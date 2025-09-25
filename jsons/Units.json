@@ -1,0 +1,147 @@
+[
+    {
+		"name": "Worker",
+		"unitType": "Programming",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"cost": 70
+	},
+    {
+		"name": "Compiler",
+		"unitType": "Programming",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+    },
+	{
+		"name": "JVM",
+		"uniqueTo": "Java",
+		"unitType": "Programming",
+		"replaces": "Compiler",
+		"movement": 3,
+		"cost": 86,
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+
+
+	{
+		"name": "Subscriber",
+		"unitType": "Programming-online",
+		"movement": 2,
+		"cost": 50,
+		"requiredTech": "Internet",
+		"uniques": ["Can build [Water] improvements on tiles", "Automation is a primary action"]
+	},
+	{
+		"name": "Numerical-variables",
+		"unitType": "Number",
+		"movement": 2,
+		"strength": 8,
+		"cost": 50,
+		"requiredTech": "Hello World",
+		"obsoleteTech": "Array",
+		"upgradesTo": "Array-variables",
+		"attackSound": "shot"
+	}, 
+	{
+		"name": "Character-variables",
+		"unitType": "Character",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 50,
+		"requiredTech": "Selection Structure",
+		"obsoleteTech": "Character String",
+		"upgradesTo": "String-variables",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "CPU",
+		"unitType": "Hardware",
+		"movement": 4,
+		"strength": 10,
+		"cost": 75,
+		"requiredTech": "Von Neumann System",
+		"obsoleteTech": "Moore's Law",
+		"upgradesTo": "Pentium-processor",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>" ],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+
+
+	{
+		"name": "Array-variables",
+		"unitType": "Number",
+		"movement": 2,
+		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Array",
+		"obsoleteTech": "Class and Object",
+		"upgradesTo": "Vector",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Function-variables",
+		"unitType": "Function",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 8,
+		"cost": 75,
+		"requiredTech": "Function",
+		"obsoleteTech": "Stack and Queue",
+		"upgradesTo": "Recursion",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "Must set up to ranged attack"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+
+
+	{
+		"name": "String-variables",
+		"unitType": "Character",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Character String",
+		"attackSound": "arrow"
+	},
+	
+
+	{
+		"name": "Vector",
+		"unitType": "Number",
+		"movement": 2,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Class and Object"
+	},
+	{
+		"name": "Recursion",
+		"unitType": "Function",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 10,
+		"cost": 75,
+		"requiredTech": "Stack and Queue",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "Must set up to ranged attack"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Pentium-processor",
+		"unitType": "Hardware",
+		"movement": 4,
+		"strength": 17,
+		"cost": 120,
+		"requiredTech": "Moore's Law",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>" ],
+		"attackSound": "horse"
+	}
+]

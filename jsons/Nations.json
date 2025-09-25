@@ -1,0 +1,115 @@
+[
+    {
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+		"innerColor": [0, 0, 0]
+    },
+
+    {
+		"name": "C++",
+		"leaderName": "Dev-C++",
+		"adjective": ["C++"],
+		"preferredVictoryType": "Domination",
+		"personality": "",
+
+		"startIntroPart1": "C++ can be used for procedural programming in C language, object-oriented programming characterized by abstract data types, and object-oriented programming characterized by inheritance and polymorphism. C++ excels in object-oriented programming and can also perform procedural programming. C++ can create almost any type of program: games, device drivers HPC、 Cloud, desktop, embedded, and mobile applications, etc. Even libraries and compilers used for other programming languages are written in C++.",
+		"startIntroPart2": "C++ has practical features for computer operation, while also striving to improve the programming quality of large-scale programs and the problem description ability of programming languages.",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "printf(\"Hello!\");",
+		"hateHello": "",
+		"tradeRequest": "",
+
+		"outerColor": [0, 68, 130],
+		"innerColor": [255, 255, 255],
+		"style": "",
+		"uniqueName": "Memory management",
+		"uniques": ["[+1 Gold, +2 Production] in cities on [RAM] tiles", "Gain a free [Linked-list] [in all cities] <after discovering [Pointer]>"],
+		"cities": [
+			"City1.cpp","City2.cpp","City3.cpp","City4.cpp","City5.cpp","City6.cpp","City7.cpp","City8.cpp","City9.cpp","City10.cpp"
+		]		
+	},
+
+    {
+		"name": "Java",
+		"leaderName": "IntelliJ IDEA",
+		"adjective": ["Java"],
+		"preferredVictoryType": "Domination",
+		"personality": "",
+
+		"startIntroPart1": "Java is an object-oriented programming language that not only absorbs various advantages of C++language, but also abandons concepts such as multiple inheritance and pointers that are difficult to understand in C++. Therefore, Java language has two characteristics: powerful functionality and simple usability. As a representative of static object-oriented programming languages, Java language excellently implements object-oriented theory, allowing programmers to perform complex programming with elegant thinking.",
+		"startIntroPart2": "Java has the characteristics of simplicity, object-oriented, distributed, robust, secure, platform independent and portable, multi-threaded, and dynamic. Java can be used to write desktop applications, web applications, distributed systems, and embedded system applications.",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "System.out.println(\"Hello!\");",
+		"hateHello": "",
+		"tradeRequest": "",
+
+		"outerColor": [66, 117, 149],
+		"innerColor": [255, 255, 255],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [],
+		"cities": [
+			"City1.java","City2.java","City3.java","City4.java","City5.java","City6.java","City7.java","City8.java","City9.java","City10.java"
+		]	
+    },
+	
+	{
+		"name": "Python",
+		"leaderName": "PyCharm",
+		"adjective": ["Python"],
+		"preferredVictoryType": "Domination",
+		"personality": "",
+
+		"startIntroPart1": "Python was designed by Guido van Rossum of the Dutch National Centre for Mathematics and Computer Science in the early 1990s as an alternative to a language called ABC. Python provides efficient advanced data structures and enables simple and effective object-oriented programming.",
+		"startIntroPart2": "The syntax and dynamic typing of Python, as well as the nature of interpreted languages, make it a programming language for scripting and rapid application development on most platforms. With the continuous updates of versions and the addition of new language features, it is gradually being used for independent, large-scale project development.",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "print(\"Hello!\")",
+		"hateHello": "",
+		"tradeRequest": "",
+
+		"outerColor": [62, 121, 168],
+		"innerColor": [255, 255, 255],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [],
+		"cities": [
+			"City1.py","City2.py","City3.py","City4.py","City5.py","City6.py","City7.py","City8.py","City9.py","City10.py"
+		]
+	},
+	
+	{
+		"name": "C#",
+		"leaderName": "Rider",
+		"adjective": ["C#"],
+		"preferredVictoryType": "Domination",
+		"personality": "",
+
+		"startIntroPart1": "C# was released in June 2000 and used The. NET framework, as a runtime environment, originates from the C language series and inherits the powerful features of C and C++while removing some of their complex characteristics.",
+		"startIntroPart2": "C# combines the simple visual operations of VB with the high running efficiency of C++, and has become a popular choice due to its powerful operational capabilities, elegant syntax style, innovative language features, and convenient support for component oriented programming The preferred language for NET development.",
+		"declaringWar": "",
+		"attacked": "",
+		"defeated": "",
+		"introduction": "",
+		"neutralHello": "Console.WriteLine(\"Hello!\");",
+		"hateHello": "",
+		"tradeRequest": "",
+
+		"outerColor": [120, 35, 121],
+		"innerColor": [255, 255, 255],
+		"style": "",
+		"uniqueName": "",
+		"uniques": [],
+		"cities": [
+			"City1.cs","City2.cs","City3.cs","City4.cs","City5.cs","City6.cs","City7.cs","City8.cs","City9.cs","City10.cs"
+		]
+	}
+]
