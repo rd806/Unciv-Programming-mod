@@ -8,16 +8,70 @@
 	},
 	{
 		"name": "Memory access II",
-		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
-		"unitTypes": ["Number", "Character", "Function"], 
-		"column": 1,
-		"row": 2         
-	},
-	{
-		"name": "Memory access III",
+		"prerequisites": ["Memory access I"],
 		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
 		"unitTypes": ["Number", "Character", "Function"],
 		"column": 1,
-		"row": 3          
+		"row": 2
+	},
+	{
+		"name": "Memory access III",
+		"prerequisites": ["Memory access II"],
+		"uniques": ["[+15]% Strength <when fighting in [RAM] tiles>"],
+		"unitTypes": ["Number", "Character", "Function"],
+		"column": 1,
+		"row": 3
+	},
+
+	{
+		"name": "Unable to pillage tiles",
+		"uniques": ["Unable to pillage tiles"]
+	},
+	{
+		"name": "Overclock I",
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Object"],
+		"column": 2,
+		"row": 1
+	},
+	{
+		"name": "Overclock II",
+		"prerequisites": ["Overclock I"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Object"],
+		"column": 2,
+		"row": 2
+	},
+	{
+		"name": "Overclock III",
+		"prerequisites": ["Overclock II"],
+		"uniques": ["[+10]% Strength", "[+1] Movement"],
+		"unitTypes": ["Object"],
+		"column": 2,
+		"row": 3
+	},
+
+	{
+		"name": "Bandwidth I",
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Network"],
+		"column": 3,
+		"row": 1
+	},
+	{
+		"name": "Bandwidth II",
+		"prerequisites": ["Bandwidth I"],
+		"uniques": ["[+15]% Strength"],
+		"unitTypes": ["Network"],
+		"column": 3,
+		"row": 2
+	},
+	{
+		"name": "Bandwidth III",
+		"prerequisites": ["Bandwidth II"],
+		"uniques": ["[+15]% Strength", "[+1] Movement"],
+		"unitTypes": ["Network"],
+		"column": 3,
+		"row": 3
 	}
 ]

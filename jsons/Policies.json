@@ -1,7 +1,7 @@
 [
     {
         "name": "Algorithm",
-        "era": "Stage I",
+        "era": "Stage II",
         "priorities": {
             "Neutral": 10,
             "Cultural": 10,
@@ -11,7 +11,7 @@
         },
         "uniques": [
             "Only available <after discovering [Basic Algorithm]>",
-            "[+10]% [Production] from every [OJ]"
+            "[+10]% [Science] from every [OJ]"
         ],
         "policies": [
             {
@@ -26,7 +26,7 @@
              {
                 "name": "Sort",
                 "uniques": [
-
+                    "[+1 Science] [in all cities]"
                 ],
                 "row": 1,
                 "column": 3,
@@ -43,16 +43,19 @@
             },
             {
                 "name": "Greedy",
-                "uniques": [],
+                "uniques": [
+                    "[+15]% [Gold] [in all cities]"
+                ],
                 "row": 2,
                 "column": 1,
                 "requires": ["Simulation", "Sort"]
             },
-           
+
             {
                 "name": "Algorithm Complete",
                 "uniques": [
-                    "[+1 Science] [in all cities]"
+                    "[+1 Science] [in all cities]",
+                    "[+1 Culture] [in all cities]"
                 ]
             }
         ]

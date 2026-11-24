@@ -19,9 +19,13 @@
     {
         "name": "Function",
         "movementType": "Land"
-    }, 
+    },
     {
-        "name": "Hardware",
+        "name": "Object",
         "movementType": "Land"
+    },
+    {
+        "name": "Network",
+        "movementType": "Water"
     }
 ]

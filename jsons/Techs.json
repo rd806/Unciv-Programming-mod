@@ -8,7 +8,7 @@
 			{
 				"name": "Hello World",
 				"row": 5,
-				"quote": "WIP",
+				"quote": "\"Hello, World!\" is the traditional first program of a new language. Print the greeting, and the journey begins.",
 				"uniques": ["Starting tech"]
 			}
 		]	
@@ -23,7 +23,7 @@
 		"techs": [
 			{
 				"name": "Internet",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Hello World"],
 				"quote": "The Internet, also known as the Net, is a global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to communicate between networks and devices.",
 				"uniques": []
@@ -208,6 +208,44 @@
 				"prerequisites": ["Operating System", "Moore's Law"],
 				"quote": "The memory architecture covers the connection mode between storage devices and computer systems, and has developed through bus storage, storage networks, and virtual storage stages.",
 				"uniques": ["Roads connect tiles across rivers", "Improves movement speed on roads"]
+			}
+		]
+	},
+
+	{
+		"columnNumber": 6,
+		"era": "Stage III",
+		"techCost": 400,
+		"buildingCost": 150,
+		"wonderCost": 350,
+		"techs": [
+			{
+				"name": "Discrete Mathematics",
+				"row": 3,
+				"prerequisites": ["Basic Algorithm"],
+				"quote": "Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous, including graphs, sets, and logic.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Boolean Algebra",
+				"row": 5,
+				"prerequisites": ["Basic Algorithm"],
+				"quote": "Boolean algebra is the branch of algebra in which the values of the variables are true and false, usually denoted 1 and 0, and the operations are AND, OR, and NOT.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Circuit Principles",
+				"row": 7,
+				"prerequisites": ["Memory Architecture"],
+				"quote": "Circuit principles describe how logic gates are built from transistors and combined into the integrated circuits at the heart of every computer.",
+				"uniques": ["[+1 Production] [in all cities]"]
+			},
+			{
+				"name": "Machine Language",
+				"row": 9,
+				"prerequisites": ["Memory Architecture"],
+				"quote": "Machine language is the set of binary instructions a processor can execute directly, the lowest level of programming.",
+				"uniques": ["[+1 Production] [in all cities]", "[+1 Science] [in all cities]"]
 			}
 		]
 	}

@@ -29,7 +29,7 @@
 		"improvement": "HDD-box",
 		"improvementStats": {"food": 1},
 		"uniques": [
-			"Generated on every [18] tiles <in [{Featureless} {RAM}] tiles>"
+			"Generated on every [18] tiles <in [{Featureless} {Hard-drive}] tiles>"
 		]
 	},
 
@@ -45,7 +45,7 @@
 	{
 		"name": "Office",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hard-drive", "Worn-Hard-drive"],
+		"terrainsCanBeFoundOn": ["Hard-drive", "Worn-Hard-drive", "Encrypted-Hard-drive"],
 		"gold": 2,
 		"improvement": "Project",
 		"improvementStats": {"gold": 1},
@@ -54,7 +54,7 @@
 	{
 		"name": "Photoshop",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Hard-drive"],
+		"terrainsCanBeFoundOn": ["Hard-drive", "Encrypted-Hard-drive"],
 		"gold": 2,
 		"improvement": "Project",
 		"improvementStats": {"gold": 1},

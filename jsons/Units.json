@@ -37,6 +37,27 @@
 		"uniques": ["Can build [Water] improvements on tiles", "Automation is a primary action"]
 	},
 	{
+		"name": "Server",
+		"unitType": "Network",
+		"movement": 4,
+		"strength": 12,
+		"cost": 100,
+		"requiredTech": "Network Protocol",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Client",
+		"unitType": "Network",
+		"movement": 4,
+		"strength": 9,
+		"rangedStrength": 13,
+		"cost": 100,
+		"requiredTech": "Network Protocol",
+		"attackSound": "arrow"
+	},
+
+
+	{
 		"name": "Numerical-variables",
 		"unitType": "Number",
 		"movement": 2,
@@ -46,7 +67,7 @@
 		"obsoleteTech": "Array",
 		"upgradesTo": "Array-variables",
 		"attackSound": "shot"
-	}, 
+	},
 	{
 		"name": "Character-variables",
 		"unitType": "Character",
@@ -61,7 +82,7 @@
 	},
 	{
 		"name": "CPU",
-		"unitType": "Hardware",
+		"unitType": "Object",
 		"movement": 4,
 		"strength": 10,
 		"cost": 75,
@@ -79,6 +100,20 @@
 		"unitType": "Number",
 		"movement": 2,
 		"strength": 14,
+		"cost": 75,
+		"requiredTech": "Array",
+		"obsoleteTech": "Class and Object",
+		"upgradesTo": "Vector",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Smart Pointer",
+		"uniqueTo": "C++",
+		"unitType": "Number",
+		"replaces": "Array-variables",
+		"movement": 3,
+		"strength": 16,
 		"cost": 75,
 		"requiredTech": "Array",
 		"obsoleteTech": "Class and Object",
@@ -112,7 +147,7 @@
 		"requiredTech": "Character String",
 		"attackSound": "arrow"
 	},
-	
+
 
 	{
 		"name": "Vector",
@@ -120,6 +155,16 @@
 		"movement": 2,
 		"strength": 21,
 		"cost": 120,
+		"requiredTech": "Class and Object"
+	},
+	{
+		"name": "ArrayList",
+		"uniqueTo": "Java",
+		"unitType": "Number",
+		"replaces": "Vector",
+		"movement": 3,
+		"strength": 22,
+		"cost": 110,
 		"requiredTech": "Class and Object"
 	},
 	{
@@ -135,8 +180,36 @@
 		"attackSound": "throw"
 	},
 	{
+		"name": "Generator",
+		"uniqueTo": "Python",
+		"unitType": "Function",
+		"replaces": "Recursion",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 12,
+		"cost": 70,
+		"requiredTech": "Stack and Queue",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "Must set up to ranged attack"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Delegate",
+		"uniqueTo": "C#",
+		"unitType": "Function",
+		"replaces": "Recursion",
+		"movement": 2,
+		"strength": 9,
+		"rangedStrength": 12,
+		"cost": 75,
+		"requiredTech": "Stack and Queue",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "Must set up to ranged attack"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
 		"name": "Pentium-processor",
-		"unitType": "Hardware",
+		"unitType": "Object",
 		"movement": 4,
 		"strength": 17,
 		"cost": 120,
