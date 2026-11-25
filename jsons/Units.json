@@ -87,7 +87,7 @@
 		"strength": 10,
 		"cost": 75,
 		"requiredTech": "Von Neumann System",
-		"obsoleteTech": "Moore's Law",
+		"obsoleteTech": "Processor Architecture",
 		"upgradesTo": "Pentium-processor",
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>" ],
 		"hurryCostModifier": 20,
@@ -213,7 +213,7 @@
 		"movement": 4,
 		"strength": 17,
 		"cost": 120,
-		"requiredTech": "Moore's Law",
+		"requiredTech": "Processor Architecture",
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>" ],
 		"attackSound": "horse"
 	}

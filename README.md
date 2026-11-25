@@ -3,19 +3,13 @@
 **A computer-science themed base ruleset for [Unciv](https://github.com/yairm210/Unciv).**
 
 Choose a programming language as your civilization and guide it from the first `Hello World`
-to machine language. Along the way you will research data structures, operating systems,
-processor architecture and networking — and turn all of it into units, buildings and
-improvements on the map.
+to **Future Tech**. Along the way you will research data structures, operating systems,
+processor architecture, networking, AI and quantum computing — and turn all of it into
+units, buildings and improvements on the map.
 
 > [!NOTE]
 > This is a **base ruleset** mod (`"isBaseRuleset": true`). It replaces the vanilla ruleset
 > entirely, including the tech tree, units, buildings, terrains, nations and policies.
-
-**中文简介**
-
-这是一个以计算机科学为主题的 Unciv 基础规则集模组。你可以选择一门编程语言作为文明，
-从 `Hello World` 一路研究到机器语言，用变量、数据结构、操作系统、处理器体系结构和网络
-协议来发展你的帝国。模组完全替换原版规则，适合想换一种科技树和世界观来玩 Unciv 的玩家。
 
 ## Status
 
@@ -27,15 +21,15 @@ improvements on the map.
 
 | Content | Count | Notes |
 | --- | --- | --- |
-| Eras | 3 | Stage I, Stage II, Stage III |
-| Technologies | 28 | 7 columns, from `Hello World` to `Machine Language` |
+| Eras | 5 | Stage I–V |
+| Technologies | 96 | 15 columns, from `Hello World` to the repeatable **Future Tech** |
 | Playable nations | 4 | C++, Java, Python, C# |
 | Unit types | 7 | Number, Character, Function, Object, Network and two civilian types |
 | Units | 19 | Civilian, melee, ranged, siege, armored and naval lines |
-| Buildings | 24 | Software applications, including 2 World Wonders, 2 National Wonders and 4 civilization-specific buildings |
-| Policies | 1 branch / 5 policies | The **Algorithm** branch |
+| Buildings | 26 | Software applications, including 3 World Wonders, 2 National Wonders and 3 civilization-specific buildings |
+| Policies | 4 branches / 20 policies | **Algorithm**, **Frontend**, **Backend** and **Agent**, 5 policies each |
 | Resources | 6 | 3 Bonus, 3 Luxury |
-| Terrains | 6 base + 3 features | Land, water, hills, mountains and rare features |
+| Terrains | 7 base + 3 features | Land, water, hills, mountains, GPU plains and features |
 | Promotions | 10 | Memory access, Overclock and Bandwidth lines, plus the barbarian water-unit restriction |
 | Difficulties | 5 | Freshman → Developer |
 | Victory types | 1 | Domination |
@@ -45,7 +39,7 @@ improvements on the map.
 | Nation | Leader | Unique ability | Unique assets |
 | --- | --- | --- | --- |
 | **C++** | Bjarne Stroustrup | *Memory management* — +1 Gold and +2 Production in cities on RAM tiles; free STL in every city after discovering Pointer | **STL** (replaces Database), **Smart Pointer** (replaces Array-variables) |
-| **Java** | James Gosling | *Write once, run anywhere* — units ignore terrain costs when moving into Hills | **Spring** (replaces Build System), **JVM** (settler), **ArrayList** (replaces Vector) |
+| **Java** | James Gosling | *Write once, run anywhere* — units ignore terrain costs when moving into Hills | **JVM** (settler), **ArrayList** (replaces Vector) — two unique units |
 | **Python** | Guido van Rossum | *Batteries included* — +15% Science in all cities; free Jupyter in every city after discovering Sequential Structure | **Jupyter** (replaces Notebook), **Generator** (replaces Recursion) |
 | **C#** | Microsoft | *Managed code* — +10% Production in all cities; new Object units start with 15 XP | **CLR** (replaces Virtual Machine), **Delegate** (replaces Recursion) |
 
@@ -59,10 +53,16 @@ All buildings represent software: applications, kernels, operating systems, deve
 tools or famous websites. Most of them require a technology, and wonders are unique
 software projects:
 
-- **World Wonders**: **Luogu** (online judge) and **Linux** (operating system).
+- **World Wonders**: **Luogu** (online judge), **Linux** (operating system) and
+  **ChatGPT** (conversational AI).
 - **National Wonders**: **Kernel** (capital) and **VScode** (code editor).
+- **Technology-linked buildings**: **Blender** (computer graphics) and **TensorFlow**
+  (machine learning).
 - **Civilization-specific buildings** replace a generic building for their civilization:
-  **STL** for C++, **Jupyter** for Python, **Spring** for Java and **CLR** for C#.
+  **STL** for C++, **Jupyter** for Python and **CLR** for C#.
+
+Each civilization follows the mod's design rule of either one unique unit plus one
+unique building, or two unique units: Java has two unique units and no unique building.
 
 ## Units
 
@@ -76,36 +76,56 @@ Civilization-specific units are language constructs: **Smart Pointer** for C++, 
 
 ## Eras and the tech tree
 
-The game runs through three eras:
+The tech tree has **96 technologies in 15 columns**, three columns per stage:
 
-1. **Stage I — First Steps**: `Hello World`, control flow, binary numbers, the Web.
-2. **Stage II — Systems**: arrays and functions, pointers, strings, assembly, operating
-   systems, processor architecture, memory management.
-3. **Stage III — Theory**: discrete mathematics, Boolean algebra, circuit principles and
-   machine language.
+| Stage | Chinese name | Theme |
+| --- | --- | --- |
+| Stage I | 似懂非懂 | Mathematical foundations, programming frameworks and basic concepts |
+| Stage II | 初现端倪 | Data structures, algorithms and digital design |
+| Stage III | 渐入佳境 | Computer networks, object orientation and computer architecture |
+| Stage IV | 大彻大悟 | Parallel computing, IoT, blockchain and large models |
+| Stage V | 炉火纯青 | Frontier computing theory and technology |
 
-Each technology column unlocks a consistent set of units, buildings or improvements.
-A few milestones matter early:
+Every branch converges on the final, repeatable **Future Tech**. Each technology column
+unlocks a consistent set of units, buildings, improvements or bonuses. A few milestones
+matter early:
 
-- **Website** enables embarkation for land units. You cannot cross water before it.
+- **Website** enables embarkation for land units and opens the **Frontend** policy branch.
+  You cannot cross water before it.
 - **Pointer** unlocks Roads, the Database building and +1 Production on RAM tiles.
 - **Basic Algorithm** opens the **Algorithm** policy branch.
+- **Operating System** opens the **Backend** policy branch.
+- **Artificial Intelligence** opens the **Agent** policy branch.
+- **Computer Graphics**, **Machine Learning** and **Artificial Intelligence** unlock
+  Blender, TensorFlow and ChatGPT respectively.
+
+## Policies
+
+There are four policy trees, each with exactly five policies (four regular policies and
+one finisher). Each tree is themed around a development domain and its structure mirrors
+a classic Civ V tree:
+
+- **Algorithm** (Tradition-like) — algorithms and optimization.
+- **Frontend** (Liberty-like) — browser and UI development.
+- **Backend** (Honor-like) — servers, APIs and databases.
+- **Agent** (Commerce-like) — prompt engineering, tool use and multi-agent systems.
 
 ## The world
 
 The map is built from computer hardware instead of terrain:
 
-| Terrain | Role |
-| --- | --- |
-| Cloud-storage | Deep water (ocean) |
-| Mobile-storage | Coastal water; richer food/gold and preferred start locations |
-| Hard-drive | Flat land |
-| RAM | Flat land with Production; DDR4/DDR5 deposits |
-| Cache | Fertile flat land |
-| System occupancy | Impassable mountain-like terrain with turn damage |
-| Worn-Hard-drive | Rough hill-like feature; improves city strength |
-| Encrypted-Hard-drive | Rare rough feature with the same defensive benefits |
-| 404NotFound | Rare, impassable cold-water feature |
+| Terrain | Civ V analogue | Role |
+| --- | --- | --- |
+| Cache | Grassland | Fertile flat land |
+| RAM | Plains | Flat land with Production; DDR4/DDR5 deposits |
+| GPU | Plains | Flat land; units move at double speed here |
+| Hard-drive | Hill | Rough elevated land; cities gain defensive strength |
+| System occupancy | Mountain | Impassable mountain-like terrain with turn damage |
+| Mobile-storage | Coast | Coastal water; preferred water start locations |
+| Cloud-storage | Ocean | Deep water |
+| Worn-Hard-drive | Marsh | Rare, unbuildable low-yield feature on Hard-drive |
+| Encrypted-Hard-drive | Forest | Rough, defensive feature on Hard-drive |
+| 404 | Ice | Rare, impassable cold-water feature |
 
 Resources and their improvements:
 
@@ -163,13 +183,15 @@ listed in the output as well. See the Unciv documentation under
 
 ## Roadmap / known limitations
 
-- Stage IV and Stage V are reserved in the translation file but have no content yet.
 - Only the Domination victory is implemented. Scientific, Cultural and Diplomatic
   victories are not available.
 - More programming-language nations (JavaScript, Rust, Go, …) would need new nation icons.
-- `Encrypted-Hard-drive`, the `Algorithm` policy icons, the four civilization-specific
-  buildings/units and the two Network units currently use tinted variants of existing art
-  as placeholders; dedicated artwork is welcome.
+- `Encrypted-Hard-drive`, `GPU`, `404`, `ChatGPT`, `Blender`, `TensorFlow`, the
+  **Frontend / Backend / Agent** policy icons, the civilization-specific buildings/units
+  and the two Network units currently use tinted variants of existing art as placeholders;
+  dedicated artwork is welcome.
+- Quotes for the newly added Stage IV / Stage V technologies are English-only at present;
+  the older technologies and all building names are translated.
 - Religion, Great People, espionage and city-state quests are not customized.
 
 ## Contributing

@@ -11,9 +11,8 @@
 				"quote": "\"Hello, World!\" is the traditional first program of a new language. Print the greeting, and the journey begins.",
 				"uniques": ["Starting tech"]
 			}
-		]	
+		]
 	},
-
 	{
 		"columnNumber": 1,
 		"era": "Stage I",
@@ -22,40 +21,26 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Internet",
+				"name": "Binary System",
 				"row": 2,
 				"prerequisites": ["Hello World"],
-				"quote": "The Internet, also known as the Net, is a global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to communicate between networks and devices.",
-				"uniques": []
+				"quote": "A method of counting and carrying. There are only two digits, 0 and 1, and one digit is carried for every 2. It is mostly used in electronic computers."
 			},
 			{
-				"name": "Sequential Structure",
-				"row": 3,
-				"prerequisites": ["Hello World"],
-				"quote": "Sequential structure is the simplest and most commonly used program structure, as long as the corresponding statements are written in the order of solving the problem. Its execution order is top-down and sequential.",
-				"uniques": []
-			}, {
-				"name": "Selection Structure",
-				"row": 4,
-				"prerequisites": ["Hello World"],
-				"quote": "The core of selection structure is to form conditional judgments through relational expressions and logical expressions, and the result is determined by Boolean values to determine the branch path.",
-				"uniques": []
-			}, {
-				"name": "Iteration Structure",
+				"name": "Boolean Algebra",
 				"row": 5,
 				"prerequisites": ["Hello World"],
-				"quote": "Iteration structure refers to a program structure that needs to be repeatedly executed to determine whether to continue or exit the loop based on the conditions in the loop body.",
-				"uniques": []
-			}, {
-				"name": "Binary System",
+				"quote": "Boolean algebra is the branch of algebra in which the values of the variables are true and false, usually denoted 1 and 0, and the operations are AND, OR, and NOT."
+			},
+			{
+				"name": "Babbage Engine",
 				"row": 8,
 				"prerequisites": ["Hello World"],
-				"quote": "A method of counting and carrying. There are only two digits, 0 and 1, and one digit is carried for every 2. It is mostly used in electronic computers.",
-				"uniques": []
+				"quote": "Charles Babbage's Analytical Engine (1837) was the first general-purpose mechanical computer design, with a store, a mill, and punched-card input.",
+				"uniques": ["[+1 Science] [in capital]"]
 			}
 		]
 	},
-
 	{
 		"columnNumber": 2,
 		"era": "Stage I",
@@ -64,46 +49,56 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Website",
+				"name": "Sequential Structure",
 				"row": 1,
-				"prerequisites": ["Internet"],
-				"quote": "A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.",
-				"uniques": ["Enables embarkation for land units"]
+				"prerequisites": ["Binary System"],
+				"quote": "Sequential structure is the simplest and most commonly used program structure, as long as the corresponding statements are written in the order of solving the problem. Its execution order is top-down and sequential."
 			},
 			{
-				"name": "Array",
-				"row": 2,
-				"prerequisites": ["Sequential Structure", "Selection Structure", "Iteration Structure"],
-				"quote": "An array is a data structure that contains a group of elements. Typically, these elements are all of the same data type, such as an integer or string",
-				"uniques": []
-			}, {
-				"name": "Function",
-				"row": 4,
-				"prerequisites": ["Sequential Structure", "Selection Structure", "Iteration Structure"],
-				"quote": "A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.",
-				"uniques": []
-			}, {
-				"name": "Code",
-				"row": 6,
-				"prerequisites": ["Binary System"],
-				"quote": "Code is a set of instructions written in a programming language that a computer can understand and execute.",
-				"uniques": []
-			}, {
 				"name": "Von Neumann System",
-				"row": 8,
+				"row": 2,
 				"prerequisites": ["Binary System"],
-				"quote": "Von Neumann system: The number system of digital computers adopts binary and computers should execute programs in sequence.",
-				"uniques": []
-			}, {
+				"quote": "Von Neumann system: The number system of digital computers adopts binary and computers should execute programs in sequence."
+			},
+			{
+				"name": "Selection Structure",
+				"row": 3,
+				"prerequisites": ["Boolean Algebra"],
+				"quote": "The core of selection structure is to form conditional judgments through relational expressions and logical expressions, and the result is determined by Boolean values to determine the branch path."
+			},
+			{
+				"name": "Iteration Structure",
+				"row": 5,
+				"prerequisites": ["Boolean Algebra"],
+				"quote": "Iteration structure refers to a program structure that needs to be repeatedly executed to determine whether to continue or exit the loop based on the conditions in the loop body."
+			},
+			{
+				"name": "Function",
+				"row": 6,
+				"prerequisites": ["Boolean Algebra"],
+				"quote": "A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing."
+			},
+			{
 				"name": "Linear Algebra",
+				"row": 7,
+				"prerequisites": ["Boolean Algebra"],
+				"quote": "Linear algebra is the branch of mathematics concerning linear equations, linear functions, and their representations through matrices and vector spaces."
+			},
+			{
+				"name": "Turing Machine",
+				"row": 8,
+				"prerequisites": ["Babbage Engine"],
+				"quote": "Alan Turing's 1936 abstract machine formalized computation and showed that some problems are undecidable.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Code",
 				"row": 9,
-				"prerequisites": ["Binary System"],
-				"quote": "Linear algebra is the branch of mathematics concerning linear equations, linear functions, and their representations through matrices and vector spaces.",
-				"uniques": []
+				"prerequisites": ["Babbage Engine"],
+				"quote": "Code is a set of instructions written in a programming language that a computer can understand and execute."
 			}
 		]
 	},
-
 	{
 		"columnNumber": 3,
 		"era": "Stage II",
@@ -112,40 +107,59 @@
 		"wonderCost": 250,
 		"techs": [
 			{
-				"name": "Network Protocol",
+				"name": "Basic Algorithm",
 				"row": 1,
-				"prerequisites": ["Website"],
-				"quote": "A network protocol is a set of rules and conventions for communication between network devices. It defines how data is formatted, transmitted, and received over a network.",
-				"uniques": []
+				"prerequisites": ["Sequential Structure"],
+				"quote": "The algorithm describes a process in which a computation can start from an initial state and initial input, go through a series of finite and clearly defined states, and ultimately produce an output that stops at a final state."
+			},
+			{
+				"name": "Array",
+				"row": 2,
+				"prerequisites": ["Sequential Structure", "Selection Structure", "Iteration Structure"],
+				"quote": "An array is a data structure that contains a group of elements. Typically, these elements are all of the same data type, such as an integer or string."
+			},
+			{
+				"name": "Computer Architecture",
+				"row": 3,
+				"prerequisites": ["Von Neumann System"],
+				"quote": "Pipelining, caching, and superscalar execution shaped the design of modern processors.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Character String",
+				"row": 4,
+				"prerequisites": ["Function"],
+				"quote": "A string is a sequence of characters, either as a literal constant or as some kind of variable. The latter may allow its elements to be mutated and the length changed, or it may be fixed (after creation)."
 			},
 			{
 				"name": "Pointer",
-				"row": 2,
-				"prerequisites": ["Array"],
-				"quote": "A pointer is a variable that stores the memory address of another variable. Pointers are used to manipulate data in memory directly.",
-				"uniques": []
-			}, {
-				"name": "Character String",
-				"row": 4,
-				"prerequisites": ["Array", "Function", "Code"],
-				"quote": "A string is a sequence of characters, either as a literal constant or as some kind of variable. The latter may allow its elements to be mutated and the length changed, or it may be fixed (after creation).",
-				"uniques": []
-			}, {
-				"name": "Assembly Language",
 				"row": 6,
-				"prerequisites": ["Code", "Von Neumann System"],
-				"quote": "Assembly language is a low-level programming language that uses symbolic code and is specific to a computer architecture. It is converted into machine language using an assembler.",
-				"uniques": []
-			}, {
-				"name": "Processor Architecture",
+				"prerequisites": ["Code"],
+				"quote": "A pointer is a variable that stores the memory address of another variable. Pointers are used to manipulate data in memory directly."
+			},
+			{
+				"name": "Discrete Mathematics",
+				"row": 7,
+				"prerequisites": ["Linear Algebra"],
+				"quote": "Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous, including graphs, sets, and logic.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Circuit Principles",
 				"row": 8,
-				"prerequisites": ["Von Neumann System"],
-				"quote": "Processor architecture refers to the design and organization of a computer's central processing unit (CPU), including its instruction set, data paths, and control unit.",
-				"uniques": []
+				"prerequisites": ["Code"],
+				"quote": "Circuit principles describe how logic gates are built from transistors and combined into the integrated circuits at the heart of every computer.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Computability Theory",
+				"row": 9,
+				"prerequisites": ["Turing Machine"],
+				"quote": "The Church-Turing thesis established that all reasonable models of computation are equivalent.",
+				"uniques": ["[+1 Science] [in all cities]"]
 			}
 		]
 	},
-
 	{
 		"columnNumber": 4,
 		"era": "Stage II",
@@ -154,33 +168,55 @@
 		"wonderCost": 250,
 		"techs": [
 			{
-				"name": "Class and Object",
+				"name": "Hash Table",
 				"row": 2,
-				"prerequisites": ["Pointer"],
-				"quote": "A class is a blueprint for creating objects, providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).",
-				"uniques": []
-			}, {
-				"name": "Stack and Queue",
+				"prerequisites": ["Array"],
+				"quote": "A hash table maps keys to values with a hash function, giving average constant-time lookup.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Memory Architecture",
+				"row": 3,
+				"prerequisites": ["Computer Architecture"],
+				"quote": "The memory architecture covers the connection mode between storage devices and computer systems, and has developed through bus storage, storage networks, and virtual storage stages.",
+				"uniques": ["Roads connect tiles across rivers", "Improves movement speed on roads"]
+			},
+			{
+				"name": "Algorithm Complexity",
 				"row": 4,
+				"prerequisites": ["Basic Algorithm"],
+				"quote": "Big-O notation and complexity classes compare algorithms by how their resource use grows with input.",
+				"uniques": ["[+10]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Stack and Queue",
+				"row": 5,
 				"prerequisites": ["Character String", "Pointer"],
-				"quote": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle, while a queue follows the First In First Out (FIFO) principle.",
-				"uniques": []
-			}, {
-				"name": "Operating System",
-				"row": 6,
-				"prerequisites": ["Assembly Language", "Processor Architecture"],
-				"quote": "An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.",
-				"uniques": []
-			}, {
-				"name": "Moore's Law",
+				"quote": "A stack is a linear data structure that follows the Last In First Out (LIFO) principle, while a queue follows the First In First Out (FIFO) principle."
+			},
+			{
+				"name": "Graph Theory",
+				"row": 7,
+				"prerequisites": ["Discrete Mathematics"],
+				"quote": "Graph theory studies vertices and edges, providing the language for networks, routes, and dependencies.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Logic Synthesis",
+				"row": 8,
+				"prerequisites": ["Circuit Principles"],
+				"quote": "Logic synthesis automates the translation of Boolean specifications into gate-level circuits.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Complexity Theory",
 				"row": 9,
-				"prerequisites": ["Processor Architecture"],
-				"quote": "Moore's Law is the observation that the number of transistors in a dense integrated circuit doubles about every two years.",
-				"uniques": []
+				"prerequisites": ["Computability Theory"],
+				"quote": "Complexity theory classifies problems by the resources needed to solve them, from P and NP to PSPACE.",
+				"uniques": ["[+1 Science] [in all cities]"]
 			}
 		]
 	},
-
 	{
 		"columnNumber": 5,
 		"era": "Stage II",
@@ -189,29 +225,55 @@
 		"wonderCost": 300,
 		"techs": [
 			{
+				"name": "Database Theory",
+				"row": 2,
+				"prerequisites": ["Hash Table"],
+				"quote": "Database theory formalizes relations, transactions, and query languages for reliable data storage.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
 				"name": "Memory Release",
 				"row": 3,
-				"prerequisites": ["Class and Object", "Stack and Queue", "Operating System"],
-				"quote": "Memory release refers to the technical means of releasing data residing in memory to improve the utilization and performance of system memory resources.",
-				"uniques": []
+				"prerequisites": ["Memory Architecture"],
+				"quote": "Memory release refers to the technical means of releasing data residing in memory to improve the utilization and performance of system memory resources."
 			},
 			{
-				"name": "Basic Algorithm",
+				"name": "Dynamic Programming",
 				"row": 4,
-				"prerequisites": ["Stack and Queue"],
-				"quote": "The algorithm describes a process in which a computation can start from an initial state and initial input, go through a series of finite and clearly defined states, and ultimately produce an output that stops at a final state.",
-				"uniques": []
+				"prerequisites": ["Algorithm Complexity"],
+				"quote": "Dynamic programming solves complex problems by combining solutions to overlapping subproblems.",
+				"uniques": ["[+1 Science] [in all cities]"]
 			},
 			{
-				"name": "Memory Architecture",
+				"name": "Recursive Algorithms",
+				"row": 5,
+				"prerequisites": ["Stack and Queue"],
+				"quote": "Recursion solves a problem by reducing it to smaller instances of the same problem.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Information Theory",
 				"row": 7,
-				"prerequisites": ["Operating System", "Moore's Law"],
-				"quote": "The memory architecture covers the connection mode between storage devices and computer systems, and has developed through bus storage, storage networks, and virtual storage stages.",
-				"uniques": ["Roads connect tiles across rivers", "Improves movement speed on roads"]
+				"prerequisites": ["Graph Theory"],
+				"quote": "Shannon's information theory quantifies information, compression, and channel capacity.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "NP-Completeness",
+				"row": 8,
+				"prerequisites": ["Complexity Theory"],
+				"quote": "NP-completeness identifies the hardest problems in NP, whose solutions can be checked in polynomial time.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "VLSI Design",
+				"row": 9,
+				"prerequisites": ["Logic Synthesis"],
+				"quote": "VLSI design packs millions of transistors onto a single chip through hierarchical circuit design.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
 			}
 		]
 	},
-
 	{
 		"columnNumber": 6,
 		"era": "Stage III",
@@ -220,32 +282,504 @@
 		"wonderCost": 350,
 		"techs": [
 			{
-				"name": "Discrete Mathematics",
+				"name": "Database Systems",
+				"row": 2,
+				"prerequisites": ["Database Theory"],
+				"quote": "Database systems implement storage engines, transactions, and query processing.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Operating System",
 				"row": 3,
-				"prerequisites": ["Basic Algorithm"],
-				"quote": "Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous, including graphs, sets, and logic.",
-				"uniques": ["[+1 Science] [in all cities]"]
+				"prerequisites": ["Memory Release"],
+				"quote": "An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs."
 			},
 			{
-				"name": "Boolean Algebra",
+				"name": "Compiler Theory",
+				"row": 4,
+				"prerequisites": ["Dynamic Programming"],
+				"quote": "Compiler theory formalized parsing, optimization, and code generation from high-level languages to machine code.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Class and Object",
 				"row": 5,
-				"prerequisites": ["Basic Algorithm"],
-				"quote": "Boolean algebra is the branch of algebra in which the values of the variables are true and false, usually denoted 1 and 0, and the operations are AND, OR, and NOT.",
+				"prerequisites": ["Recursive Algorithms"],
+				"quote": "A class is a blueprint for creating objects, providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods)."
+			},
+			{
+				"name": "Internet",
+				"row": 7,
+				"prerequisites": ["Information Theory"],
+				"quote": "The Internet, also known as the Net, is a global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to communicate between networks and devices."
+			},
+			{
+				"name": "Cryptography",
+				"row": 8,
+				"prerequisites": ["NP-Completeness"],
+				"quote": "Public-key cryptography made secure communication possible over untrusted networks.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "Processor Architecture",
+				"row": 9,
+				"prerequisites": ["VLSI Design"],
+				"quote": "Processor architecture refers to the design and organization of a computer's central processing unit (CPU), including its instruction set, data paths, and control unit."
+			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Stage III",
+		"techCost": 550,
+		"buildingCost": 180,
+		"wonderCost": 400,
+		"techs": [
+			{
+				"name": "Distributed Databases",
+				"row": 2,
+				"prerequisites": ["Database Systems"],
+				"quote": "Distributed databases replicate and partition data across multiple machines.",
 				"uniques": ["[+1 Science] [in all cities]"]
 			},
 			{
-				"name": "Circuit Principles",
+				"name": "Virtualization",
+				"row": 3,
+				"prerequisites": ["Operating System"],
+				"quote": "Virtualization lets one physical machine host many isolated virtual machines.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "JIT Compilation",
+				"row": 4,
+				"prerequisites": ["Compiler Theory"],
+				"quote": "Just-in-time compilation translates bytecode to machine code while a program runs.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Design Patterns",
+				"row": 5,
+				"prerequisites": ["Class and Object"],
+				"quote": "Design patterns capture reusable solutions to recurring object-oriented design problems.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Website",
 				"row": 7,
-				"prerequisites": ["Memory Architecture"],
-				"quote": "Circuit principles describe how logic gates are built from transistors and combined into the integrated circuits at the heart of every computer.",
-				"uniques": ["[+1 Production] [in all cities]"]
+				"prerequisites": ["Internet"],
+				"quote": "A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.",
+				"uniques": ["Enables embarkation for land units"]
+			},
+			{
+				"name": "Network Protocol",
+				"row": 8,
+				"prerequisites": ["Internet"],
+				"quote": "A network protocol is a set of rules and conventions for communication between network devices. It defines how data is formatted, transmitted, and received over a network."
+			},
+			{
+				"name": "Cybersecurity",
+				"row": 9,
+				"prerequisites": ["Cryptography"],
+				"quote": "As networks spread, security became a discipline of firewalls, encryption, and intrusion detection.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "Assembly Language",
+				"row": 10,
+				"prerequisites": ["Processor Architecture"],
+				"quote": "Assembly language is a low-level programming language that uses symbolic code and is specific to a computer architecture. It is converted into machine language using an assembler."
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Stage III",
+		"techCost": 700,
+		"buildingCost": 200,
+		"wonderCost": 450,
+		"techs": [
+			{
+				"name": "Big Data",
+				"row": 2,
+				"prerequisites": ["Distributed Databases"],
+				"quote": "Big data technologies process datasets too large for a single machine.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Cloud Computing",
+				"row": 3,
+				"prerequisites": ["Virtualization"],
+				"quote": "Cloud computing delivers computing resources over a network on demand.",
+				"uniques": ["[+10]% [Gold] [in all cities]"]
+			},
+			{
+				"name": "Bytecode",
+				"row": 4,
+				"prerequisites": ["JIT Compilation"],
+				"quote": "Bytecode is an intermediate instruction set executed by a virtual machine.",
+				"uniques": ["[+10]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Software Architecture",
+				"row": 5,
+				"prerequisites": ["Design Patterns"],
+				"quote": "Software architecture defines the structure and interactions of a large software system.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Web Frameworks",
+				"row": 7,
+				"prerequisites": ["Website"],
+				"quote": "Web frameworks provide reusable structure for building web applications.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Peer-to-Peer",
+				"row": 8,
+				"prerequisites": ["Network Protocol"],
+				"quote": "Peer-to-peer networks let nodes share resources without a central server.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "Zero Trust Security",
+				"row": 9,
+				"prerequisites": ["Cybersecurity"],
+				"quote": "Zero trust security assumes no implicit trust and verifies every request.",
+				"uniques": ["[+1 Gold] [in all cities]"]
 			},
 			{
 				"name": "Machine Language",
-				"row": 9,
-				"prerequisites": ["Memory Architecture"],
+				"row": 10,
+				"prerequisites": ["Assembly Language"],
 				"quote": "Machine language is the set of binary instructions a processor can execute directly, the lowest level of programming.",
-				"uniques": ["[+1 Production] [in all cities]", "[+1 Science] [in all cities]"]
+				"uniques": ["[+1 Production] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Stage IV",
+		"techCost": 900,
+		"buildingCost": 220,
+		"wonderCost": 500,
+		"techs": [
+			{
+				"name": "Data Science",
+				"row": 2,
+				"prerequisites": ["Big Data"],
+				"quote": "Data science combines statistics, programming, and domain knowledge to extract insight from data.",
+				"uniques": ["[+10]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Cloud Native",
+				"row": 3,
+				"prerequisites": ["Cloud Computing"],
+				"quote": "Cloud-native software is designed for containers, orchestration, and elastic scaling.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "WebAssembly",
+				"row": 4,
+				"prerequisites": ["Bytecode", "Web Frameworks"],
+				"quote": "WebAssembly is a portable binary format that runs near-native code in the browser.",
+				"uniques": ["[+10]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Microservices",
+				"row": 5,
+				"prerequisites": ["Software Architecture"],
+				"quote": "Microservices split an application into independently deployable services.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "Internet of Things",
+				"row": 8,
+				"prerequisites": ["Peer-to-Peer"],
+				"quote": "The Internet of Things connects everyday devices to networks and each other.",
+				"uniques": ["[+1 Production] [in all cities]"]
+			},
+			{
+				"name": "Blockchain",
+				"row": 9,
+				"prerequisites": ["Zero Trust Security"],
+				"quote": "The 2008 Bitcoin whitepaper introduced a distributed ledger secured by cryptography and proof-of-work.",
+				"uniques": ["[+2 Gold] [in all cities]"]
+			},
+			{
+				"name": "Parallel Computing",
+				"row": 10,
+				"prerequisites": ["Machine Language"],
+				"quote": "Parallel computing executes many operations simultaneously to reduce wall-clock time.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Stage IV",
+		"techCost": 1100,
+		"buildingCost": 240,
+		"wonderCost": 550,
+		"techs": [
+			{
+				"name": "Machine Learning",
+				"row": 2,
+				"prerequisites": ["Data Science"],
+				"quote": "Machine learning builds models that improve from data instead of relying only on hand-written rules.",
+				"uniques": ["[+10]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Serverless Computing",
+				"row": 3,
+				"prerequisites": ["Cloud Native"],
+				"quote": "Serverless computing runs functions on demand without managing servers.",
+				"uniques": ["[+10]% [Gold] [in all cities]"]
+			},
+			{
+				"name": "WebGPU",
+				"row": 4,
+				"prerequisites": ["WebAssembly"],
+				"quote": "WebGPU exposes modern graphics and compute capabilities to the browser.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Container Orchestration",
+				"row": 5,
+				"prerequisites": ["Microservices"],
+				"quote": "Container orchestration schedules, scales, and heals containerized services.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Edge Computing",
+				"row": 8,
+				"prerequisites": ["Internet of Things"],
+				"quote": "Edge computing moves computation close to data sources to reduce latency.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Consensus Algorithms",
+				"row": 9,
+				"prerequisites": ["Blockchain"],
+				"quote": "Consensus algorithms let distributed nodes agree on a shared state.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "GPU Computing",
+				"row": 10,
+				"prerequisites": ["Parallel Computing"],
+				"quote": "GPU computing uses massively parallel graphics processors for general computation.",
+				"uniques": ["[+15]% [Science] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Stage IV",
+		"techCost": 1300,
+		"buildingCost": 260,
+		"wonderCost": 600,
+		"techs": [
+			{
+				"name": "Deep Learning",
+				"row": 2,
+				"prerequisites": ["Machine Learning"],
+				"quote": "Deep neural networks and backpropagation brought breakthroughs in vision, speech, and language.",
+				"uniques": ["[+20]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Large Language Models",
+				"row": 3,
+				"prerequisites": ["Machine Learning"],
+				"quote": "Large language models learn statistical patterns from vast text corpora.",
+				"uniques": ["[+15]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Artificial Intelligence",
+				"row": 4,
+				"prerequisites": ["Machine Learning"],
+				"quote": "The 1956 Dartmouth workshop founded artificial intelligence as a field of computer science.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Computer Graphics",
+				"row": 5,
+				"prerequisites": ["WebGPU"],
+				"quote": "Computer graphics turned linear algebra into images, from rasterization and shading to ray tracing.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Infrastructure as Code",
+				"row": 6,
+				"prerequisites": ["Serverless Computing", "Container Orchestration"],
+				"quote": "Infrastructure as code manages servers and networks through versioned configuration.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Computer Vision",
+				"row": 8,
+				"prerequisites": ["Edge Computing"],
+				"quote": "Computer vision teaches machines to interpret images, from edge detection to convolutional networks.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Smart Contracts",
+				"row": 9,
+				"prerequisites": ["Consensus Algorithms"],
+				"quote": "Smart contracts encode agreements as self-executing programs on a blockchain.",
+				"uniques": ["[+1 Gold] [in all cities]"]
+			},
+			{
+				"name": "Distributed Training",
+				"row": 10,
+				"prerequisites": ["GPU Computing"],
+				"quote": "Distributed training splits model training across many machines and accelerators.",
+				"uniques": ["[+15]% [Science] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Stage V",
+		"techCost": 1500,
+		"buildingCost": 280,
+		"wonderCost": 650,
+		"techs": [
+			{
+				"name": "AutoML",
+				"row": 2,
+				"prerequisites": ["Deep Learning"],
+				"quote": "AutoML automates model selection, hyperparameter tuning, and architecture search.",
+				"uniques": ["[+15]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Neuromorphic Computing",
+				"row": 3,
+				"prerequisites": ["Deep Learning"],
+				"quote": "Neuromorphic computing mimics the brain's spiking neurons in hardware.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Natural Language Processing",
+				"row": 4,
+				"prerequisites": ["Large Language Models"],
+				"quote": "Natural language processing taught computers to parse, translate, and generate human language.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Brain-Computer Interface",
+				"row": 5,
+				"prerequisites": ["Artificial Intelligence"],
+				"quote": "Brain-computer interfaces read neural signals and translate them into commands.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Metaverse",
+				"row": 6,
+				"prerequisites": ["Computer Graphics"],
+				"quote": "The metaverse is a persistent shared virtual world.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Self-Healing Systems",
+				"row": 7,
+				"prerequisites": ["Infrastructure as Code"],
+				"quote": "Self-healing systems detect and recover from failures automatically.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Autonomous Systems",
+				"row": 8,
+				"prerequisites": ["Computer Vision"],
+				"quote": "Autonomous systems make decisions without continuous human control.",
+				"uniques": ["[+1 Production] [in all cities]"]
+			},
+			{
+				"name": "Zero-Knowledge Proofs",
+				"row": 9,
+				"prerequisites": ["Smart Contracts"],
+				"quote": "Zero-knowledge proofs convince a verifier of a statement without revealing the secret.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Federated Learning",
+				"row": 10,
+				"prerequisites": ["Distributed Training"],
+				"quote": "Federated learning trains models across devices without centralizing their data.",
+				"uniques": ["[+20]% [Science] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Stage V",
+		"techCost": 1700,
+		"buildingCost": 300,
+		"wonderCost": 700,
+		"techs": [
+			{
+				"name": "Quantum Computing",
+				"row": 3,
+				"prerequisites": ["AutoML", "Neuromorphic Computing"],
+				"quote": "Quantum computers exploit superposition and entanglement to solve certain problems exponentially faster than classical machines.",
+				"uniques": ["[+20]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Artificial General Intelligence",
+				"row": 4,
+				"prerequisites": ["Natural Language Processing", "Brain-Computer Interface"],
+				"quote": "AGI would match or exceed human intelligence across a broad range of tasks.",
+				"uniques": ["[+20]% [Science] [in all cities]"]
+			},
+			{
+				"name": "Autonomic Computing",
+				"row": 5,
+				"prerequisites": ["Self-Healing Systems"],
+				"quote": "Autonomic computing systems manage and tune themselves.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Extended Reality",
+				"row": 6,
+				"prerequisites": ["Metaverse"],
+				"quote": "Extended reality combines virtual and augmented reality with physical space.",
+				"uniques": ["[+1 Culture] [in all cities]"]
+			},
+			{
+				"name": "Formal Verification",
+				"row": 7,
+				"prerequisites": ["Self-Healing Systems"],
+				"quote": "Formal methods use logic and proof to show that hardware and software meet their specifications.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			},
+			{
+				"name": "Post-Quantum Cryptography",
+				"row": 8,
+				"prerequisites": ["Zero-Knowledge Proofs"],
+				"quote": "Post-quantum cryptography designs algorithms that remain secure against attacks by quantum computers.",
+				"uniques": ["[+1 Science] [in all cities]"]
+			},
+			{
+				"name": "Swarm Robotics",
+				"row": 9,
+				"prerequisites": ["Autonomous Systems", "Federated Learning"],
+				"quote": "Swarm robotics coordinates many simple robots into collective behavior.",
+				"uniques": ["[+10]% [Production] [in all cities]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Stage V",
+		"techCost": 2000,
+		"buildingCost": 320,
+		"wonderCost": 750,
+		"techs": [
+			{
+				"name": "Future Tech",
+				"row": 6,
+				"prerequisites": ["Quantum Computing", "Artificial General Intelligence", "Autonomic Computing", "Extended Reality", "Formal Verification", "Post-Quantum Cryptography", "Swarm Robotics"],
+				"quote": "The future is not yet written. Keep researching to see what comes next.",
+				"uniques": ["Can be continually researched"]
 			}
 		]
 	}

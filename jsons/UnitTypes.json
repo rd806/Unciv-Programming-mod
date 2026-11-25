@@ -1,7 +1,8 @@
 [
     {
         "name": "Programming",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Double movement in [GPU]"]
     },
     {
         "name": "Programming-online",
@@ -10,19 +11,23 @@
 
     {
         "name": "Number",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Double movement in [GPU]"]
     },
     {
         "name": "Character",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Double movement in [GPU]"]
     },
     {
         "name": "Function",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Double movement in [GPU]"]
     },
     {
         "name": "Object",
-        "movementType": "Land"
+        "movementType": "Land",
+        "uniques": ["Double movement in [GPU]"]
     },
     {
         "name": "Network",

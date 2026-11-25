@@ -23,7 +23,7 @@
                 "column": 1,
                 "requires": []
             },
-             {
+            {
                 "name": "Sort",
                 "uniques": [
                     "[+1 Science] [in all cities]"
@@ -50,12 +50,191 @@
                 "column": 1,
                 "requires": ["Simulation", "Sort"]
             },
-
             {
                 "name": "Algorithm Complete",
                 "uniques": [
                     "[+1 Science] [in all cities]",
                     "[+1 Culture] [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Frontend",
+        "era": "Stage III",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 15,
+            "Diplomatic": 10,
+            "Domination": 0,
+            "Scientific": 10
+        },
+        "uniques": [
+            "Only available <after discovering [Website]>",
+            "[+10]% [Culture] [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "React",
+                "uniques": [
+                    "[+1 Culture] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1,
+                "requires": []
+            },
+            {
+                "name": "Responsive Design",
+                "uniques": [
+                    "[+1 Happiness] [in all cities]"
+                ],
+                "row": 1,
+                "column": 3,
+                "requires": []
+            },
+            {
+                "name": "Component Library",
+                "uniques": [
+                    "[+15]% Production when constructing [Culture] buildings [in all cities]"
+                ],
+                "row": 1,
+                "column": 5,
+                "requires": []
+            },
+            {
+                "name": "State Management",
+                "uniques": [
+                    "[+10]% [Science] [in all cities]"
+                ],
+                "row": 2,
+                "column": 2,
+                "requires": ["React", "Responsive Design"]
+            },
+            {
+                "name": "Frontend Complete",
+                "uniques": [
+                    "[+1 Culture] [in all cities]",
+                    "[+1 Gold] [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Backend",
+        "era": "Stage III",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 5,
+            "Diplomatic": 5,
+            "Domination": 15,
+            "Scientific": 10
+        },
+        "uniques": [
+            "Only available <after discovering [Operating System]>",
+            "[+10]% [Production] [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "REST API",
+                "uniques": [
+                    "[+10]% [Gold] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1,
+                "requires": []
+            },
+            {
+                "name": "GraphQL",
+                "uniques": [
+                    "[+1 Science] [in all cities]"
+                ],
+                "row": 1,
+                "column": 3,
+                "requires": []
+            },
+            {
+                "name": "Service Mesh",
+                "uniques": [
+                    "[+1 Production] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5,
+                "requires": []
+            },
+            {
+                "name": "Database Sharding",
+                "uniques": [
+                    "[+15]% Production when constructing [Science] buildings [in all cities]"
+                ],
+                "row": 2,
+                "column": 2,
+                "requires": ["REST API", "GraphQL"]
+            },
+            {
+                "name": "Backend Complete",
+                "uniques": [
+                    "[+1 Production] [in all cities]",
+                    "[+1 Science] [in all cities]"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Agent",
+        "era": "Stage IV",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 5,
+            "Diplomatic": 15,
+            "Domination": 5,
+            "Scientific": 10
+        },
+        "uniques": [
+            "Only available <after discovering [Artificial Intelligence]>",
+            "[+10]% [Gold] [in all cities]"
+        ],
+        "policies": [
+            {
+                "name": "Prompt Engineering",
+                "uniques": [
+                    "[+1 Science] [in all cities]"
+                ],
+                "row": 1,
+                "column": 1,
+                "requires": []
+            },
+            {
+                "name": "Tool Calling",
+                "uniques": [
+                    "[+1 Production] [in all cities]"
+                ],
+                "row": 1,
+                "column": 3,
+                "requires": []
+            },
+            {
+                "name": "Retrieval Augmented Generation",
+                "uniques": [
+                    "[+1 Culture] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5,
+                "requires": []
+            },
+            {
+                "name": "Multi-Agent System",
+                "uniques": [
+                    "[+10]% [Gold] [in all cities]"
+                ],
+                "row": 2,
+                "column": 2,
+                "requires": ["Prompt Engineering", "Tool Calling"]
+            },
+            {
+                "name": "Agent Complete",
+                "uniques": [
+                    "[+1 Science] [in all cities]",
+                    "[+1 Gold] [in all cities]"
                 ]
             }
         ]

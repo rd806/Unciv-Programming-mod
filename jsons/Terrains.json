@@ -1,36 +1,25 @@
 [
-	// Base terrains
+	// Base terrains - local runtime environments
 	{
-		"name": "Cloud-storage",
-		"type": "Water",
-		"food": 2,
-		"movementCost": 1,
-		"RGB": [43, 87, 151]
-	},
-	{
-		"name": "Mobile-storage",
-		"type": "Water",
-		"food": 2,
-        "gold": 1,
-		"movementCost": 1,
-		"RGB": [70, 138, 216],
-		"uniques": [
-			"[+2] to Fertility for Map Generation",
-			"Considered [Desirable] when determining start locations <on water maps>",
-			"Coastal Water"
-        ]
-	},
-
-	{
-		"name": "Hard-drive",
+		"name": "Cache",
 		"type": "Land",
-		"food": 1,
+		"food": 2,
 		"movementCost": 1,
-        "RGB": [0, 163, 0],
-        "uniques": [
-			"[+2] to Fertility for Map Generation"
+		"RGB": [124, 62, 57],
+		"uniques": [
+			"Occurs at temperature between [-0.4] and [-0.1] and humidity between [0] and [0.2]",
+			"Occurs at temperature between [-0.4] and [0.4] and humidity between [0.4] and [0.6]",
+			"Occurs at temperature between [0.4] and [0.5] and humidity between [0.5] and [0.6]",
+			"Occurs at temperature between [-0.6] and [0.7] and humidity between [0.8] and [0.9]",
+			"Occurs at temperature between [-0.6] and [-0.5] and humidity between [0.9] and [1]",
+			"Occurs at temperature between [0.9] and [1] and humidity between [0] and [0.2]",
+			"Occurs at temperature between [0.8] and [0.9] and humidity between [0.2] and [0.6]",
+			"Occurs at temperature between [0.7] and [0.8] and humidity between [0.3] and [0.4]",
+			"Occurs at temperature between [0.6] and [0.8] and humidity between [0.6] and [0.7]",
+			"Occurs at temperature between [0.5] and [0.7] and humidity between [0.7] and [0.8]",
+			"[+4] to Fertility for Map Generation"
 		]
-    },
+	},
 	{
 		"name": "RAM",
 		"type": "Land",
@@ -52,53 +41,31 @@
 		]
 	},
 	{
-		"name": "Cache",
+		"name": "GPU",
 		"type": "Land",
-		"food": 2,
-		"production": 1,
-		"movementCost": 1,
-		"RGB": [124, 62, 57],
-		"uniques": [
-			"Occurs at temperature between [-0.4] and [-0.1] and humidity between [0] and [0.2]",
-			"Occurs at temperature between [-0.4] and [0.4] and humidity between [0.4] and [0.6]",
-			"Occurs at temperature between [0.4] and [0.5] and humidity between [0.5] and [0.6]",
-			"Occurs at temperature between [-0.6] and [0.7] and humidity between [0.8] and [0.9]",
-			"Occurs at temperature between [-0.6] and [-0.5] and humidity between [0.9] and [1]",
-			"Occurs at temperature between [0.9] and [1] and humidity between [0] and [0.2]",
-			"Occurs at temperature between [0.8] and [0.9] and humidity between [0.2] and [0.6]",
-			"Occurs at temperature between [0.7] and [0.8] and humidity between [0.3] and [0.4]",
-			"Occurs at temperature between [0.6] and [0.8] and humidity between [0.6] and [0.7]",
-			"Occurs at temperature between [0.5] and [0.7] and humidity between [0.7] and [0.8]",
-			"[+4] to Fertility for Map Generation"
-		]
-	},
-	{
-		"name": "System occupancy",
-		"type": "Land",
-		"impassable": true,
-		"defenceBonus": 0.25,
-		"RGB": [102, 102, 102],
-		"uniques": [
-			"Rough terrain",
-            "Has an elevation of [2] for visibility calculations",
-            "Occurs in chains at high elevations",
-            "Units ending their turn on this terrain take [50] damage",
-            "Always Fertility [-2] for Map Generation",
-            "Considered [Undesirable] when determining start locations"
-		]
-	},
-	
-	// Terrain features
-	{
-		"name": "Worn-Hard-drive",
-		"type": "TerrainFeature",
 		"food": 1,
 		"production": 1,
+		"movementCost": 1,
+		"RGB": [90, 70, 170],
+		"uniques": [
+			"Occurs at temperature between [-0.4] and [0.2] and humidity between [0] and [0.4]",
+			"Occurs at temperature between [0.4] and [1] and humidity between [0] and [0.4]",
+			"Occurs at temperature between [0.2] and [0.6] and humidity between [0.4] and [0.7]",
+			"Occurs at temperature between [-0.6] and [0] and humidity between [0.7] and [1]",
+			"[+1] to Fertility for Map Generation"
+		],
+		"civilopediaText": [
+			{"text": "Units move at double speed across GPU tiles"}
+		]
+	},
+	{
+		"name": "Hard-drive",
+		"type": "Land",
+		"food": 1,
+		"production": 2,
 		"movementCost": 2,
-		"overrideStats": true,
 		"defenceBonus": 0.25,
-		"RGB": [105, 125, 72],
-		"occursOn": ["Hard-drive"],
+		"RGB": [0, 163, 0],
 		"uniques": [
 			"Rough terrain",
 			"[+5] Strength for cities built on this terrain",
@@ -110,27 +77,84 @@
 		]
 	},
 	{
+		"name": "System occupancy",
+		"type": "Land",
+		"impassable": true,
+		"defenceBonus": 0.25,
+		"RGB": [102, 102, 102],
+		"uniques": [
+			"Rough terrain",
+			"Has an elevation of [2] for visibility calculations",
+			"Occurs in chains at high elevations",
+			"Units ending their turn on this terrain take [50] damage",
+			"Always Fertility [-2] for Map Generation",
+			"Considered [Undesirable] when determining start locations"
+		]
+	},
+
+	// Base terrains - remote runtime environments
+	{
+		"name": "Mobile-storage",
+		"type": "Water",
+		"food": 2,
+		"gold": 1,
+		"movementCost": 1,
+		"RGB": [70, 138, 216],
+		"uniques": [
+			"[+2] to Fertility for Map Generation",
+			"Considered [Desirable] when determining start locations <on water maps>",
+			"Coastal Water"
+		]
+	},
+	{
+		"name": "Cloud-storage",
+		"type": "Water",
+		"food": 2,
+		"movementCost": 1,
+		"RGB": [43, 87, 151]
+	},
+
+	// Terrain features - local environments
+	{
+		"name": "Worn-Hard-drive",
+		"type": "TerrainFeature",
+		"food": -1,
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"RGB": [90, 105, 60],
+		"occursOn": ["Hard-drive"],
+		"uniques": [
+			"Rare feature",
+			"Vegetation",
+			"[-2] to Fertility for Map Generation",
+			"Considered [Undesirable] when determining start locations"
+		]
+	},
+	{
 		"name": "Encrypted-Hard-drive",
 		"type": "TerrainFeature",
 		"food": 1,
 		"production": 1,
 		"movementCost": 2,
 		"overrideStats": true,
+		"unbuildable": true,
 		"defenceBonus": 0.25,
 		"RGB": [105, 125, 72],
 		"occursOn": ["Hard-drive"],
 		"uniques": [
-			"Rare feature",
 			"Rough terrain",
-			"[+5] Strength for cities built on this terrain",
-			"Has an elevation of [1] for visibility calculations",
-			"Occurs at temperature between [-0.4] and [0.6] and humidity between [0.3] and [0.9]",
+			"Vegetation",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[25]% Chance to be destroyed by nukes",
 			"[+1] to Fertility for Map Generation",
 			"Considered [Desirable] when determining start locations"
 		]
 	},
+
+	// Terrain features - remote environments
 	{
-		"name": "404NotFound",
+		"name": "404",
 		"type": "TerrainFeature",
 		"impassable": true,
 		"overrideStats": true,

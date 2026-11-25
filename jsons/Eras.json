@@ -49,5 +49,39 @@
         "citySound": "cityRenaissance",
         "iconRGB": [255, 87, 35],
         "uniques": []
+    },
+    {
+        "name": "Stage IV",
+        "researchAgreementCost": 200,
+        "startingSettlerCount": 1,
+        "startingGold": 150,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Vector",
+        "settlerPopulation": 1,
+        "settlerBuildings": [],
+        "baseUnitBuyCost": 200,
+        "embarkDefense": 20,
+        "startPercent": 0,
+        "citySound": "cityRenaissance",
+        "iconRGB": [255, 87, 35],
+        "uniques": []
+    },
+    {
+        "name": "Stage V",
+        "researchAgreementCost": 250,
+        "startingSettlerCount": 1,
+        "startingGold": 200,
+        "startingWorkerCount": 1,
+        "startingMilitaryUnitCount": 2,
+        "startingMilitaryUnit": "Pentium-processor",
+        "settlerPopulation": 1,
+        "settlerBuildings": [],
+        "baseUnitBuyCost": 200,
+        "embarkDefense": 20,
+        "startPercent": 0,
+        "citySound": "cityRenaissance",
+        "iconRGB": [255, 87, 35],
+        "uniques": []
     }
 ]
